@@ -2,15 +2,19 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
 }
 
 .profileImg {
-    height: 705px;
+    height: 660pxpx;
+    width: 100%;
 }
 
 .textSection {
-    padding-top: 200px;
+    padding-top: 210px;
 }
 
 .frame1 {
@@ -28,17 +32,18 @@
 .firstText {
     transform: rotate(-90deg);
     font-size: 64px;
+    width: 135px;
 }
 
 .secondText {
     font-weight: 700;
     font-size: 75px;
-    line-height: 100%;
+    line-height: 120%;
 }
 
 .thirdText {
     font-weight: 400;
-    font-size: 50px;
+    font-size: 55px;
     line-height: 100%;
     color: #4B47FF;
 }
@@ -68,5 +73,16 @@ button {
         // transform: scale(1.2);
         width: 175px;
         height: 68px;
+    }
+}
+
+.bigBar {
+    position: absolute;
+    top: 480px;
+    width: 100%;
+    z-index: -1;
+    img {
+        width: 100%;
+        height: 900px;
     }
 }
