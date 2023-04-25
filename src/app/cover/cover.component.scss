@@ -8,13 +8,26 @@
     padding: 10px;
 }
 
+.imgContainer {
+    position: relative;
+}
+
 .profileImg {
-    height: 660pxpx;
+    padding-top: 100px;
     width: 100%;
 }
 
+.profileImgBg {
+    position: absolute;
+    left: -120px;
+    top: 225px;
+    width: 850px;
+    height: 750px;
+    z-index: -1;
+}
+
 .textSection {
-    padding-top: 210px;
+    padding-top: 300px;
 }
 
 .frame1 {
@@ -78,7 +91,7 @@ button {
 
 .bigBar {
     position: absolute;
-    top: 480px;
+    top: 450px;
     width: 100%;
     z-index: -1;
     img {
