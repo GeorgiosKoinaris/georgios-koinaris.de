@@ -109,9 +109,12 @@ button {
 .contacts {
     display: flex;
     align-items: center;
-    img {
-        margin-right: 40px;
-    }
+    gap: 40px;
+}
+
+.line {
+    border-top: 4px solid #4B47FF;
+    width: 200px;
 }
 
 // .scrollDown {
