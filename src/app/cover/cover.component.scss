@@ -12,22 +12,26 @@
 
 .imgContainer {
     position: relative;
+    background-image: url('/assets/img/background-colors/group-shadow.png');
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 107%;
+    background-position-y: 125px;
+    background-position-x: right;
 }
 
 .profileImg {
-    padding-top: 100px;
     width: 100%;
 }
 
-.profileImgBg {
-    position: absolute;
-    left: -120px;
-    top: 225px;
-    width: 850px;
-    height: 750px;
-    z-index: -1;
-}
-
+// .profileImgBg {
+//     position: absolute;
+//     left: -120px;
+//     top: 225px;
+//     width: 850px;
+//     height: 750px;
+//     z-index: -1;
+// }
 .textSection {
     margin-top: 300px;
 }
@@ -103,6 +107,7 @@ button {
     z-index: 1;
     a {
         font-size: 25px;
+        cursor: pointer;
     }
 }
 
@@ -110,6 +115,13 @@ button {
     display: flex;
     align-items: center;
     gap: 40px;
+    img {
+        cursor: pointer;
+        transition: ease-in-out 100ms;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .line {
