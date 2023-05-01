@@ -1,26 +1,19 @@
 .aboutMeSection {
     position: relative;
-}
-
-.textWithHead {
-    width: 100%;
-    max-width: 1400px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-h2 {
-    color: white;
-    margin-top: 200px;
-    font-size: 90px;
-    font-weight: 700;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .text-container {
-    margin-top: 70px;
-    width: 550px;
     padding: 10px;
+    width: 550px;
+    h2 {
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 95px;
+        font-size: 90px;
+        font-weight: 700;
+    }
     div {
         margin-top: 30px;
         display: flex;
@@ -33,20 +26,24 @@ h2 {
 }
 
 .imgLineContainer {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
     display: flex;
     align-items: center;
     img {
-        width: 395px;
-        height: 100%;
+        width: 430px;
+        height: 430px;
+        margin-top: 50px;
         border-radius: 100%;
         border: 4px solid #1CDAE6;
     }
-}
-
-.line {
-    border-top: 4px solid #1CDAE6;
-    width: 400px;
+    &::after {
+        content: "";
+        display: inline-block;
+        margin-top: 50px;
+        width: 100px;
+        height: 4px;
+        position: absolute;
+        right: -100px;
+        background-color: #1CDAE6;
+    }
 }
