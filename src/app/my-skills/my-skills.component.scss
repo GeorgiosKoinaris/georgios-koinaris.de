@@ -8,17 +8,13 @@ h2 {
     &::after {
         content: "";
         display: inline-block;
-        margin-top: 25px;
+        margin-top: 22px;
         width: 200px;
         height: 4px;
         position: absolute;
         right: -100px;
         background-color: #1CDAE6;
     }
-}
-
-.marginTopBig {
-    margin-top: 90px;
 }
 
 .imageContainer {

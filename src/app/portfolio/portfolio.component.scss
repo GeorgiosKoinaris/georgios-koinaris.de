@@ -1,0 +1,27 @@
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    h2 {
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 70px;
+        font-size: 90px;
+        font-weight: 700;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        background: linear-gradient(to left, #1CDAE6 0px, #1CDAE6 100px, rgba(0, 0, 0, 0) 100px);
+        flex: 1;
+    }
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        background-color: #1CDAE6;
+        flex: 1;
+    }
+}
