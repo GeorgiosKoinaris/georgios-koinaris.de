@@ -1,1 +1,16 @@
-<p>my-skills works!</p>
+<div class="containerPadding d-flex jc-space-between marginTopBig">
+
+    <div class="imageContainer">
+        <div *ngFor="let icon of icons; let i = index" class="iconWithText">
+            <img src="{{icon}}" alt="">
+            <span>{{iconTexts[i]}}</span>
+        </div>
+    </div>
+
+    <div class="textContainer">
+        <h2>My skills</h2>
+        <span>I have grown my frontend developments skills that have allowed me to create different real projects.</span>
+        <button>Get in touch</button>
+    </div>
+
+</div>
