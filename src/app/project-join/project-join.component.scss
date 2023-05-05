@@ -3,6 +3,12 @@
     align-items: center;
     justify-content: center;
     gap: 150px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: end;
+    width: 550px;
     img {
         width: 450px;
     }
