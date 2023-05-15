@@ -3,16 +3,10 @@
 html,
 body {
     height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-body {
     color: white;
     background-color: #141D2F;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 .containerPadding {
@@ -38,4 +32,8 @@ body {
 
 .ai-center {
     align-items: center;
+}
+
+.column {
+    flex-direction: column;
 }

@@ -1,0 +1,49 @@
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    h2 {
+        color: white;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        font-size: 90px;
+        font-weight: 700;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        background: linear-gradient(to left, #4B47FF 0px, #4B47FF 100px, rgba(0, 0, 0, 0) 100px);
+        width: 80px;
+    }
+}
+
+.text-container {
+    padding: 10px;
+    width: 450px;
+    h3 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    div {
+        margin-top: 30px;
+        display: flex;
+        font-size: 16px;
+    }
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.text-field-style {
+    height: 150px !important;
+}
+
+.mat-mdc-text-field-wrapper ::ng-deep {
+    border-radius: 10px !important;
+    border: 2px solid blue !important;
+    background-color: #141D2F !important;
+}

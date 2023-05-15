@@ -11,6 +11,9 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectJoinComponent } from './project-join/project-join.component';
 import { ProjectSharkieComponent } from './project-sharkie/project-sharkie.component';
+import { ContactComponent } from './contact/contact.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +24,16 @@ import { ProjectSharkieComponent } from './project-sharkie/project-sharkie.compo
     MySkillsComponent,
     PortfolioComponent,
     ProjectJoinComponent,
-    ProjectSharkieComponent
+    ProjectSharkieComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    MatInputModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
