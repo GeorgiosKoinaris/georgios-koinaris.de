@@ -35,15 +35,39 @@
 .input-container {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    position: relative;
+    width: 800px;
+}
+
+.input-style {
+    color: white !important;
 }
 
 .text-field-style {
     height: 150px !important;
+    color: white !important;
 }
 
-.mat-mdc-text-field-wrapper ::ng-deep {
-    border-radius: 10px !important;
-    border: 2px solid blue !important;
-    background-color: #141D2F !important;
+.white-autoText {
+    color: white;
+}
+
+button {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    width: 250px;
+    height: 58px;
+    background: #00BEE8;
+    border-radius: 10px;
+    transition: ease-in-out 100ms;
+    &:hover {
+        cursor: pointer;
+        background: #4B47FF;
+        transform: scale(1.05);
+    }
 }
