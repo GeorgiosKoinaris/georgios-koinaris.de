@@ -14,6 +14,7 @@ import { ProjectSharkieComponent } from './project-sharkie/project-sharkie.compo
 import { ContactComponent } from './contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PortfolioComponent,
     ProjectJoinComponent,
     ProjectSharkieComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
