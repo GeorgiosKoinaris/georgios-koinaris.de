@@ -25,3 +25,9 @@
         flex: 1;
     }
 }
+
+@media (max-width:660px) {
+    h2 {
+        font-size: 75px !important;
+    }
+}
