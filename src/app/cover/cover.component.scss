@@ -174,10 +174,68 @@ button {
     .textSection {
         margin-top: 0;
     }
+    .firstText {
+        left: -10px;
+        bottom: -2px;
+        position: relative;
+        width: 50px;
+    }
     button {
         top: 100px;
     }
     .containerPadding {
         margin-bottom: 100px;
+    }
+}
+
+@media (max-width:788px) {
+    .containerPadding {
+        margin-bottom: 200px;
+    }
+    .imgContainer {
+        width: 360px;
+        margin-top: 90px;
+    }
+    .bigBar {
+        img {
+            height: 550px;
+        }
+    }
+    .firstText {
+        font-size: 46px;
+    }
+    .secondText {
+        font-size: 50px;
+    }
+    .thirdText {
+        font-size: 37px;
+    }
+    .line {
+        width: 100px;
+    }
+    .contactPossibilities {
+        a {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    button {
+        top: 180px;
+    }
+}
+
+@media (max-width: 668px) {
+    .containerPadding {
+        margin-bottom: 130px;
+    }
+}
+
+@media (max-width: 585px) {
+    .contactPossibilities {
+        a {
+            display: none;
+        }
     }
 }
