@@ -88,3 +88,52 @@
                             width: 400px;
                         }
                     }
+                    
+                    @media (max-width: 545px) {
+                        h2 {
+                            font-size: 55px !important;
+                        }
+                        .text-container {
+                            width: 300px;
+                        }
+                        .imgLineContainer {
+                            &::after {
+                                right: -65px;
+                                width: 65px;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 500px) {
+                        .imgLineContainer {
+                            width: 250px;
+                        }
+                    }
+                    
+                    @media (max-width: 400px) {
+                        h2 {
+                            line-height: 100%;
+                        }
+                        .text-container {
+                            width: 250px;
+                        }
+                        .imgLineContainer {
+                            width: 250px;
+                        }
+                    }
+                    
+                    @media (max-width: 375px) {
+                        .imgLineContainer {
+                            width: auto;
+                            &::after {
+                                right: -30px;
+                                width: 30px;
+                            }
+                        }
+                    }
+                    
+                    @media (max-width: 296px) {
+                        .text-container {
+                            width: auto;
+                        }
+                    }

@@ -146,3 +146,37 @@
                         }
                     }
                 }
+                
+                @media (max-width:545px) {
+                    h2 {
+                        font-size: 55px;
+                        &::after {
+                            right: -65px;
+                        }
+                    }
+                }
+                
+                @media (max-width:420px) {
+                    h2 {
+                        &::after {
+                            width: 65px;
+                        }
+                    }
+                }
+                
+                @media (max-width:375px) {
+                    h2 {
+                        line-height: 100%;
+                        &::after {
+                            right: -30px;
+                        }
+                    }
+                }
+                
+                @media (max-width:350px) {
+                    h2 {
+                        &::after {
+                            width: 30px;
+                        }
+                    }
+                }

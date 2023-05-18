@@ -40,6 +40,18 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 545px) {
+    .containerPadding {
+        padding: 35px 65px;
+    }
+}
+
+@media (max-width: 375px) {
+    .containerPadding {
+        padding: 35px 30px;
+    }
+}
+
 //////////////////// material-design redesigned classes////////////////
 .mat-mdc-text-field-wrapper {
     border-radius: 10px !important;

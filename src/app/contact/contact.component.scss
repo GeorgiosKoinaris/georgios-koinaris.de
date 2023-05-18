@@ -95,3 +95,15 @@ button {
         font-size: 75px !important;
     }
 }
+
+@media (max-width:545px) {
+    h2 {
+        font-size: 55px !important;
+    }
+}
+
+@media (max-width:466px) {
+    .input-container {
+        width: auto;
+    }
+}

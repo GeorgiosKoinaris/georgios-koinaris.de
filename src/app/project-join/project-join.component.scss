@@ -139,3 +139,15 @@
         width: auto;
     }
 }
+
+@media (max-width:516px) {
+    .imageContainer {
+        width: 400px;
+    }
+}
+
+@media (max-width:416px) {
+    .imageContainer {
+        width: auto;
+    }
+}

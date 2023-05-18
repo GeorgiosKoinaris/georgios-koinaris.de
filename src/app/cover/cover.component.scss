@@ -245,3 +245,33 @@ button {
         }
     }
 }
+
+@media (max-width: 376px) {
+    .imgContainer {
+        width: 280px;
+    }
+    .firstText {
+        font-size: 37px;
+    }
+    .secondText {
+        font-size: 40px;
+    }
+    .thirdText {
+        font-size: 32px;
+    }
+    .bigBar {
+        top: 324px;
+        img {
+            height: 100%;
+        }
+    }
+    .containerPadding {
+        margin-bottom: 245px;
+    }
+}
+
+@media (max-width: 296px) {
+    .imgContainer {
+        width: 260px;
+    }
+}
