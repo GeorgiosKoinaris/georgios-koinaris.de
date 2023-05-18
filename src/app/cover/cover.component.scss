@@ -188,6 +188,12 @@ button {
     }
 }
 
+@media (max-width:1315px) {
+    .bigBar {
+        top: 295px;
+    }
+}
+
 @media (max-width:788px) {
     .containerPadding {
         margin-bottom: 200px;

@@ -26,3 +26,23 @@ header {
         }
     }
 }
+
+@media (max-width:788px) {
+    header {
+        a {
+            font-size: 18px;
+        }
+        img {
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width:620px) {
+    header {
+        a {
+            font-size: 15px;
+            margin-left: 20px;
+        }
+    }
+}
