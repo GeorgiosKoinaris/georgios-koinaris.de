@@ -1,5 +1,5 @@
 <header>
-    <img src="./assets/img/logo-white.png" alt="Icon">
+    <img *ngIf="!navbarOpen" src="./assets/img/logo-white.png" alt="Icon">
     <div class="navBar">
         <img *ngIf="!navbarOpen" src="./assets/img/icons/menu-icon.png" alt="Icon" class="profileImg" (click)="toggleNavbar()">
         <a>About me</a>
@@ -7,7 +7,8 @@
         <a>Portfolio</a>
     </div>
     <div class=" navbar-menu " [ngClass]="{ 'open': navbarOpen } ">
-        <img src="./assets/img/icons/menu-icon-close.png" (click)="toggleNavbar()">
+        <img class="navbar-menu-logo" src="./assets/img/logo-white.png" alt="Icon">
+        <img class="" src="./assets/img/icons/menu-icon-close.png" (click)="toggleNavbar()">
         <a (click)="toggleNavbar()">About me</a>
         <a (click)="toggleNavbar()">Skills</a>
         <a (click)="toggleNavbar()">Portfolio</a>

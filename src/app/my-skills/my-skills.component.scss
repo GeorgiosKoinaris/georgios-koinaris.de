@@ -57,6 +57,7 @@
                 }
                 
                 button {
+                    position: absolute;
                     margin-top: 55px;
                     font-size: 20px;
                     color: white;
@@ -104,6 +105,7 @@
                     .imageContainer {
                         order: 1;
                         width: auto;
+                        margin-top: 100px;
                     }
                     .textContainer {
                         width: auto;

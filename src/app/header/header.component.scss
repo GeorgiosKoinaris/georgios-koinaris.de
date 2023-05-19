@@ -61,6 +61,12 @@ header {
     }
 }
 
+.navbar-menu-logo {
+    position: fixed;
+    top: 26px;
+    left: 65px;
+}
+
 .navbar-menu.open {
     transform: translateY(0%);
     pointer-events: auto;
@@ -114,5 +120,8 @@ header {
         img {
             right: 22px;
         }
+    }
+    .navbar-menu-logo {
+        left: 32px;
     }
 }
