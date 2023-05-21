@@ -27,6 +27,36 @@ header {
     }
 }
 
+.headlink {
+    position: relative;
+    &:hover {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            top: 23px;
+            left: 0px;
+            height: 3px;
+            background: linear-gradient(90deg, #4B47FF 18%, #141D2F 43%, #141D2F 70%);
+        }
+    }
+}
+
+.headlinkResponsive {
+    position: relative;
+    &:hover {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            top: 23px;
+            left: 0px;
+            height: 3px;
+            background: linear-gradient(90deg, #4B47FF 18%, #141D2F 43%, rgba(20, 29, 47, 0.1) 70%);
+        }
+    }
+}
+
 .navBar {
     img {
         width: 30px;

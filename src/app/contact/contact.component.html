@@ -49,7 +49,7 @@
                 </mat-error>
             </mat-form-field>
 
-            <button>Send message</button>
+            <button [disabled]="!(nameFormControl.valid && emailFormControl.valid && messageFormControl.valid)">Send message</button>
 
         </div>
 

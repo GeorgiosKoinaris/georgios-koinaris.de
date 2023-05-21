@@ -1,16 +1,16 @@
 <header>
-    <img *ngIf="!navbarOpen" src="./assets/img/logo-white.png" alt="Icon">
+    <a href="#cover" *ngIf="!navbarOpen"><img src="./assets/img/logo-white.png" alt="Icon"></a>
     <div class="navBar">
         <img *ngIf="!navbarOpen" src="./assets/img/icons/menu-icon.png" alt="Icon" class="profileImg" (click)="toggleNavbar()">
-        <a>About me</a>
-        <a>Skills</a>
-        <a>Portfolio</a>
+        <a href="#about-me" class="headlink">About me</a>
+        <a href="#my-skills" class="headlink">Skills</a>
+        <a href="#portfolio" class="headlink">Portfolio</a>
     </div>
-    <div class=" navbar-menu " [ngClass]="{ 'open': navbarOpen } ">
-        <img class="navbar-menu-logo" src="./assets/img/logo-white.png" alt="Icon">
+    <div class="navbar-menu" [ngClass]="{ 'open': navbarOpen } ">
+        <a href="#cover"><img (click)="toggleNavbar()" class="navbar-menu-logo" src="./assets/img/logo-white.png" alt="Icon"></a>
         <img class="" src="./assets/img/icons/menu-icon-close.png" (click)="toggleNavbar()">
-        <a (click)="toggleNavbar()">About me</a>
-        <a (click)="toggleNavbar()">Skills</a>
-        <a (click)="toggleNavbar()">Portfolio</a>
+        <a href="#about-me" class="headlinkResponsive" (click)="toggleNavbar()">About me</a>
+        <a href="#my-skills" class="headlinkResponsive" (click)="toggleNavbar()">Skills</a>
+        <a href="#portfolio" class="headlinkResponsive" (click)="toggleNavbar()">Portfolio</a>
     </div>
 </header>
