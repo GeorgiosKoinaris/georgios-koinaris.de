@@ -1,58 +1,73 @@
 <div class="section-title">
-    <h2>Contact</h2>
+  <h2>Contact</h2>
 </div>
 
 <div class="containerPadding d-flex jc-space-between bigMarginBottom">
+  <div class="text-container">
+    <h3>Got a problem to solve?</h3>
 
-    <div class="text-container">
-        <h3>
-            Got a problem to solve?
-        </h3>
-
-        <div>
-            Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.
-        </div>
-
-        <div>
-            Need a Frontend developer? <b>Contact me!</b>
-        </div>
+    <div>
+      Contact me through this form, I am interested in hearing you, knowing your
+      ideas and contributing to your projects with my work.
     </div>
 
-    <div class="input-container">
+    <div>Need a Frontend developer? <b>Contact me!</b></div>
+  </div>
 
-        <div class="d-flex column">
+  <div class="input-container">
+    <form class="d-flex column">
+      <mat-form-field>
+        <mat-label class="white-autoText">Your name</mat-label>
+        <input class="input-style" matInput [formControl]="nameFormControl" />
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+          Name is required
+        </mat-error>
+      </mat-form-field>
 
-            <mat-form-field>
-                <mat-label class="white-autoText">Your name</mat-label>
-                <input class="input-style" matInput [formControl]="nameFormControl">
-                <mat-error *ngIf="nameFormControl.hasError('required')">
-                    Name is required
-                </mat-error>
-            </mat-form-field>
+      <mat-form-field>
+        <mat-label class="white-autoText">Your email</mat-label>
+        <input
+          class="input-style"
+          type="email"
+          matInput
+          [formControl]="emailFormControl"
+        />
+        <mat-error
+          *ngIf="
+            emailFormControl.hasError('email') &&
+            !emailFormControl.hasError('required')
+          "
+        >
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is required
+        </mat-error>
+      </mat-form-field>
 
-            <mat-form-field>
-                <mat-label class="white-autoText">Your email</mat-label>
-                <input class="input-style" type="email" matInput [formControl]="emailFormControl">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                    Please enter a valid email address
-                </mat-error>
-                <mat-error *ngIf="emailFormControl.hasError('required')">
-                    Email is required
-                </mat-error>
-            </mat-form-field>
+      <mat-form-field>
+        <mat-label class="white-autoText">Your message</mat-label>
+        <textarea
+          class="text-field-style"
+          matInput
+          [formControl]="messageFormControl"
+        ></textarea>
+        <mat-error *ngIf="messageFormControl.hasError('required')">
+          Your message is required
+        </mat-error>
+      </mat-form-field>
 
-            <mat-form-field>
-                <mat-label class="white-autoText">Your message</mat-label>
-                <textarea class="text-field-style" matInput [formControl]="messageFormControl"></textarea>
-                <mat-error *ngIf="messageFormControl.hasError('required')">
-                    Your message is required
-                </mat-error>
-            </mat-form-field>
-
-            <button [disabled]="!(nameFormControl.valid && emailFormControl.valid && messageFormControl.valid)">Send message</button>
-
-        </div>
-
-    </div>
-
+      <button
+        [disabled]="
+          !(
+            nameFormControl.valid &&
+            emailFormControl.valid &&
+            messageFormControl.valid
+          )
+        "
+      >
+        Send message
+      </button>
+    </form>
+  </div>
 </div>
