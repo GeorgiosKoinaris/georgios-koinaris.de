@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  constructor(private viewportScroller: ViewportScroller) {}
+
+  scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
+  }
   navbarOpen = false;
+  
 
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
