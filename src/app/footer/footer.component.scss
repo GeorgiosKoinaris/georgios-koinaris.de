@@ -51,6 +51,9 @@ footer {
     span {
         font-size: 20px;
     }
+    p{
+        font-size: 10px;
+    }
 }
 
 .iconsContainer {
@@ -96,7 +99,7 @@ footer {
     }
     .iconsContainer {
         position: absolute;
-        top: 200px;
+        top: 210px;
         right: 100px;
         display: inline-flex;
         gap: 20px;
@@ -110,6 +113,33 @@ footer {
         top: 150px;
         span {
             font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .midDivContainer {
+      right: 63px;
+      span{
+        font-size: 17px;
+      }
+      img{
+        height: 15px;
+      }
+    }
+    .iconsContainer {
+        right: 85px;
+            img {
+                margin-left: 15px;
+        }
+    }
+}
+
+@media (max-width: 281px){
+    .midDivContainer {
+        top: 155px;
+        span{
+            font-size: 16px;
         }
     }
 }
