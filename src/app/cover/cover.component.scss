@@ -1,16 +1,17 @@
 .profileSection {
     display: flex;
     justify-content: center;
-}
+    background-image: url('/assets/img/background-colors/group-shadow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 80px;
+    }
 
 .imgContainer {
     position: relative;
-    background-image: url('/assets/img/background-colors/group-shadow.png');
+    
     margin-top: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 50px;
-    background-position-x: right;
+   
 }
 
 .profileImg {
@@ -167,13 +168,14 @@ button {
     .imgContainer {
         width: 500px;
         margin-top: 50px;
-    }
+            }
     .bigBar {
         top: 310px;
     }
     .profileSection {
         flex-direction: column;
         align-items: center;
+        background-position: center;
     }
     .textSection {
         margin-top: 0;
@@ -234,6 +236,9 @@ button {
     button {
         top: 180px;
     }
+    .profileSection {
+        background-position-y: 100px;
+    }
 }
 
 @media (max-width: 668px) {
@@ -242,11 +247,39 @@ button {
     }
 }
 
+@media (max-width: 650px) {
+    .profileSection{
+        background-size: 450px;
+        background-position: center;
+        background-position-y: 100px;
+    }
+}
+
+@media (max-width: 630px) {
+    .profileSection{
+        background-size: 400px;
+    }
+}
+
 @media (max-width: 585px) {
     .contactPossibilities {
         a {
             display: none;
         }
+    }
+}
+
+@media (max-width: 515px) {
+    .profileSection{
+        background-size: 400px;
+        background-position-y: 100px;
+        background-size: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .profileSection{
+        background-position-y: 150px;
     }
 }
 
