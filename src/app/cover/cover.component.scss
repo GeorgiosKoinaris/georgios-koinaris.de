@@ -60,7 +60,7 @@
 
 .thirdText {
     font-weight: 400;
-    font-size: 55px;
+    font-size: 64px;
     line-height: 120%;
     color: #4B47FF;
     z-index: 10;
@@ -159,7 +159,7 @@ button {
         font-size: 65px;
     }
     .thirdText {
-        font-size: 48px;
+        font-size: 56px;
     }
 }
 
@@ -199,7 +199,7 @@ button {
     }
 }
 
-@media (max-width:788px) {
+@media (max-width:868px) {
     .containerPadding {
         margin-bottom: 200px;
     }
@@ -219,7 +219,7 @@ button {
         font-size: 50px;
     }
     .thirdText {
-        font-size: 37px;
+        font-size: 42px;
     }
     .line {
         width: 100px;
@@ -231,7 +231,10 @@ button {
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 725px) {
+    .thirdText{
+        font-size: 43px;
+    }
     button {
         top: 180px;
     }
