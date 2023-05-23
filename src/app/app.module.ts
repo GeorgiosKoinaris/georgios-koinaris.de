@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { ProjectHomepageComponent } from './project-homepage/project-homepage.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ImprintComponent } from './imprint/imprint.component';
     ProjectSharkieComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
+    ProjectHomepageComponent
   ],
   imports: [
     BrowserModule,
