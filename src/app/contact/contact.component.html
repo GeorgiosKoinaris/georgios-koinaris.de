@@ -15,10 +15,16 @@
   </div>
 
   <div class="input-container">
-    <form class="d-flex column">
+    <form (submit)="sendMail()" class="d-flex column" #myForm>
       <mat-form-field>
         <mat-label class="white-autoText">Your name</mat-label>
-        <input class="input-style" matInput [formControl]="nameFormControl" />
+        <input
+          #nameField
+          name="name"
+          class="input-style"
+          matInput
+          [formControl]="nameFormControl"
+        />
         <mat-error *ngIf="nameFormControl.hasError('required')">
           Name is required
         </mat-error>
@@ -27,6 +33,7 @@
       <mat-form-field>
         <mat-label class="white-autoText">Your email</mat-label>
         <input
+          #mailField
           class="input-style"
           type="email"
           matInput
@@ -48,6 +55,8 @@
       <mat-form-field>
         <mat-label class="white-autoText">Your message</mat-label>
         <textarea
+          #messageField
+          name="message"
           class="text-field-style"
           matInput
           [formControl]="messageFormControl"
@@ -58,6 +67,7 @@
       </mat-form-field>
 
       <button
+        #sendButton
         [disabled]="
           !(
             nameFormControl.valid &&
