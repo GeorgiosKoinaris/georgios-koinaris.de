@@ -24,16 +24,12 @@ export class ContactComponent {
     let nameField = this.nameField.nativeElement;
     let mailField = this.mailField.nativeElement;
     let messageField = this.messageField.nativeElement;
-
     this.disableFields();
-
     //Animation anzeigen
-
     let fd = new FormData();
     fd.append('name', nameField.value);
     fd.append('message', messageField.value);
     fd.append('email', mailField.value);
-
     //senden
     await fetch(
       'https://georgios-koinaris.developerakademie.net/send_mail/send_mail.php',
@@ -42,9 +38,7 @@ export class ContactComponent {
         body: fd,
       }
     );
-
     //Text anzeigen: Nachricht gesendet
-
     this.enableFields();
     this.clearInputs();
   }

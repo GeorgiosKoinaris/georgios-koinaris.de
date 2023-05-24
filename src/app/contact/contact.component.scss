@@ -1,124 +1,129 @@
 :host {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 100px;
 }
 
 .section-title {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    h2 {
-        color: white;
-        margin-top: 70px;
-        margin-bottom: 70px;
-        font-size: 90px;
-        font-weight: 700;
-    }
-    &::before {
-        content: "";
-        display: inline-block;
-        height: 4px;
-        background: linear-gradient(to left, #4B47FF 0px, #4B47FF 100px, rgba(0, 0, 0, 0) 100px);
-        width: 80px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  h2 {
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-size: 90px;
+    font-weight: 700;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    background: linear-gradient(
+      to left,
+      #4b47ff 0px,
+      #4b47ff 100px,
+      rgba(0, 0, 0, 0) 100px
+    );
+    width: 80px;
+  }
 }
 
 .text-container {
-    padding: 10px;
-    width: 450px;
-    h3 {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 100%;
-    }
-    div {
-        margin-top: 30px;
-        font-size: 16px;
-    }
+  padding: 10px;
+  width: 450px;
+  h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 100%;
+  }
+  div {
+    margin-top: 30px;
+    font-size: 16px;
+  }
 }
 
 .input-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 800px;
 }
 
 .input-style {
-    color: white !important;
+  color: white !important;
 }
 
 .text-field-style {
-    height: 150px !important;
-    color: white !important;
+  height: 150px !important;
+  color: white !important;
 }
 
 .white-autoText {
-    color: white;
+  color: white;
 }
 
 button {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-    width: 250px;
-    height: 58px;
-    background: #00BEE8;
-    border-radius: 10px;
-    transition: ease-in-out 100ms;
-    &:hover {
-        cursor: pointer;
-        background: #4B47FF;
-        transform: scale(1.05);
-    }
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  width: 250px;
+  height: 58px;
+  background: #00bee8;
+  border-radius: 10px;
+  transition: ease-in-out 100ms;
+  &:hover {
+    cursor: pointer;
+    background: #4b47ff;
+    transform: scale(1.05);
+  }
 }
 
 button[disabled] {
-    background-color: gray;
-    cursor: not-allowed;
+  background-color: gray;
+  cursor: not-allowed;
 }
 
 button[disabled]:hover {
-    background-color: gray;
-    cursor: not-allowed;
-    transform: scale(1);
+  background-color: gray;
+  cursor: not-allowed;
+  transform: scale(1);
 }
 
 ///////////////////////////////////////////////////media querry///////////////////////////////////////////////////////////
-@media (max-width:1525px) {
-    .containerPadding {
-        gap: 50px;
-    }
+@media (max-width: 1525px) {
+  .containerPadding {
+    gap: 50px;
+  }
 }
 
-@media (max-width:740px) {
-    .containerPadding {
-        flex-direction: column;
-        align-items: center;
-    }
-    .text-container {
-        width: auto;
-    }
-    .input-container {
-        width: 450px;
-    }
+@media (max-width: 740px) {
+  .containerPadding {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-container {
+    width: auto;
+  }
+  .input-container {
+    width: 450px;
+  }
 }
 
-@media (max-width:660px) {
-    h2 {
-        font-size: 75px !important;
-    }
+@media (max-width: 660px) {
+  h2 {
+    font-size: 75px !important;
+  }
 }
 
-@media (max-width:545px) {
-    h2 {
-        font-size: 55px !important;
-    }
+@media (max-width: 545px) {
+  h2 {
+    font-size: 55px !important;
+  }
 }
 
-@media (max-width:466px) {
-    .input-container {
-        width: auto;
-    }
+@media (max-width: 466px) {
+  .input-container {
+    width: auto;
+  }
 }
