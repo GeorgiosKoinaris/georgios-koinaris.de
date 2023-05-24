@@ -30,6 +30,7 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "node_modules/aos/dist/aos.css",
                             "@angular/material/prebuilt-themes/indigo-pink.css",
                             "src/styles.scss",
                             "src/assets/fonts/font.css"
@@ -94,6 +95,7 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "node_modules/aos/dist/aos.css",
                             "@angular/material/prebuilt-themes/indigo-pink.css",
                             "src/styles.scss",
                             "src/assets/fonts/font.css"

@@ -17,6 +17,10 @@ h3 {
   font-family: "Poppins" !important;
 }
 
+.containerHidden {
+  overflow: hidden;
+}
+
 .containerPadding {
   padding: 35px 100px;
 }
@@ -27,7 +31,7 @@ h3 {
 }
 
 .bigMarginBottom {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .d-flex {

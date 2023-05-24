@@ -31,7 +31,7 @@ import { ProjectHomepageComponent } from './project-homepage/project-homepage.co
     ContactComponent,
     FooterComponent,
     ImprintComponent,
-    ProjectHomepageComponent
+    ProjectHomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,9 +39,9 @@ import { ProjectHomepageComponent } from './project-homepage/project-homepage.co
     MatInputModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

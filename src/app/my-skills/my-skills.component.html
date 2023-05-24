@@ -1,16 +1,24 @@
-<div class="containerPadding d-flex jc-space-between marginTopBottomBig bigMarginBottom">
-
+<div class="containerHidden">
+  <div
+    data-aos="fade-left"
+    data-aos-offset="400"
+    data-aos-duration="1300"
+    class="containerPadding d-flex jc-space-between marginTopBottomBig bigMarginBottom"
+  >
     <div class="imageContainer">
-        <div *ngFor="let icon of icons; let i = index" class="iconWithText">
-            <img src="{{icon}}" alt="">
-            <span>{{iconTexts[i]}}</span>
-        </div>
+      <div *ngFor="let icon of icons; let i = index" class="iconWithText">
+        <img src="{{ icon }}" alt="" />
+        <span>{{ iconTexts[i] }}</span>
+      </div>
     </div>
 
     <div class="textContainer">
-        <h2>My skills</h2>
-        <span>I have grown my frontend developments skills that have allowed me to create different real projects.</span>
-        <a href="#contact"><button>Get in touch</button></a>
+      <h2>My skills</h2>
+      <span
+        >I have grown my frontend developments skills that have allowed me to
+        create different real projects.</span
+      >
+      <a href="#contact"><button>Get in touch</button></a>
     </div>
-
+  </div>
 </div>
