@@ -85,8 +85,9 @@
             messageFormControl.valid
           )
         "
+        [class.sent-message]="showMessage"
       >
-        Send message
+        {{ showMessage ? "Message has been sent!" : "Send message" }}
       </button>
     </form>
   </div>

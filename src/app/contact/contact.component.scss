@@ -77,6 +77,9 @@ button {
     background: #4b47ff;
     transform: scale(1.05);
   }
+  &.sent-message {
+    background-color: green !important;
+  }
 }
 
 button[disabled] {

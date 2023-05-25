@@ -14,6 +14,8 @@ export class ContactComponent {
   ]);
   messageFormControl = new FormControl('', [Validators.required]);
 
+  showMessage = false;
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('mailField') mailField!: ElementRef;
@@ -39,8 +41,13 @@ export class ContactComponent {
       }
     );
     //Text anzeigen: Nachricht gesendet
+    this.showMessage = true;
     this.enableFields();
     this.clearInputs();
+    //Nachricht nach 1 Sekunde ausblenden
+    setTimeout(() => {
+      this.showMessage = false;
+    }, 3000);
   }
 
   disableFields() {
@@ -50,7 +57,7 @@ export class ContactComponent {
     let sendButton = this.sendButton.nativeElement;
 
     nameField.disabled = true;
-    mailField.disable = true;
+    mailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
   }
@@ -61,7 +68,7 @@ export class ContactComponent {
     let messageField = this.messageField.nativeElement;
 
     nameField.disabled = false;
-    mailField.disable = true;
+    mailField.disabled = true;
     messageField.disabled = false;
   }
 
