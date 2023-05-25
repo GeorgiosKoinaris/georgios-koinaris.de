@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { ProjectHomepageComponent } from './project-homepage/project-homepage.component';
+import { ProjectRingoffireComponent } from './project-ringoffire/project-ringoffire.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProjectHomepageComponent } from './project-homepage/project-homepage.co
     FooterComponent,
     ImprintComponent,
     ProjectHomepageComponent,
+    ProjectRingoffireComponent,
   ],
   imports: [
     BrowserModule,
