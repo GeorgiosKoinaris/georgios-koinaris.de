@@ -1,20 +1,19 @@
 .profileSection {
-    display: flex;
-    justify-content: center;
-    background-image: url('/assets/img/background-colors/group-shadow.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 80px;
-    }
+  display: flex;
+  justify-content: center;
+  background-image: url("./../../assets/img/background-colors/group-shadow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 80px;
+}
 
 .imgContainer {
-    position: relative;
-    margin-top: 120px;
-   
+  position: relative;
+  margin-top: 120px;
 }
 
 .profileImg {
-    width: 100%;
+  width: 100%;
 }
 
 // .profileImgBg {
@@ -26,103 +25,103 @@
 //     z-index: -1;
 // }
 .textSection {
-    margin-top: 300px;
-    position: relative;
+  margin-top: 300px;
+  position: relative;
 }
 
 .frame1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .frame2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .firstText {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 64px;
-    width: 135px;
-    display: flex;
-    align-items: center;
-    z-index: 10;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 64px;
+  width: 135px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
 }
 
 .secondText {
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 120%;
-    z-index: 10;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 120%;
+  z-index: 10;
 }
 
 .thirdText {
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 120%;
-    color: #4B47FF;
-    z-index: 10;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 120%;
+  color: #4b47ff;
+  z-index: 10;
 }
 
 button {
-    position: absolute;
-    font-size: 20px;
-    top: 130px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    color: white;
-    margin-top: 65px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 165px;
-    height: 58px;
-    background: #00BEE8;
-    border-radius: 10px;
-    transition: ease-in-out 100ms;
-    &:hover {
-        cursor: pointer;
-        background: #4B47FF;
-        width: 175px;
-        height: 68px;
-    }
+  position: absolute;
+  font-size: 20px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  color: white;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 165px;
+  height: 58px;
+  background: #00bee8;
+  border-radius: 10px;
+  transition: ease-in-out 100ms;
+  &:hover {
+    cursor: pointer;
+    background: #4b47ff;
+    width: 175px;
+    height: 68px;
+  }
 }
 
 .contactPossibilities {
-    position: relative;
-    z-index: 1;
-    a {
-        font-size: 25px;
-        cursor: pointer;
-    }
+  position: relative;
+  z-index: 1;
+  a {
+    font-size: 25px;
+    cursor: pointer;
+  }
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    img {
-        cursor: pointer;
-        transition: ease-in-out 100ms;
-        &:hover {
-            transform: scale(1.2);
-        }
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  img {
+    cursor: pointer;
+    transition: ease-in-out 100ms;
+    &:hover {
+      transform: scale(1.2);
     }
-    a{
-        color: white;
-        text-decoration: none;
-    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .line {
-    border-top: 4px solid #4B47FF;
-    width: 200px;
+  border-top: 4px solid #4b47ff;
+  width: 200px;
 }
 
 // .scrollDown {
@@ -141,176 +140,176 @@ button {
 //     }
 // }
 .bigBar {
-    position: absolute;
-    top: 450px;
+  position: absolute;
+  top: 450px;
+  width: 100%;
+  img {
     width: 100%;
-    img {
-        width: 100%;
-        height: 900px;
-    }
+    height: 900px;
+  }
 }
 
 ///////////////////////////////////////////////////media querry///////////////////////////////////////////////////////////
 @media (max-width: 1600px) {
-    .firstText {
-        font-size: 57px;
-    }
-    .secondText {
-        font-size: 65px;
-    }
-    .thirdText {
-        font-size: 56px;
-    }
+  .firstText {
+    font-size: 57px;
+  }
+  .secondText {
+    font-size: 65px;
+  }
+  .thirdText {
+    font-size: 56px;
+  }
 }
 
-@media (max-width:1520px) {
-    .imgContainer {
-        width: 500px;
-        margin-top: 50px;
-            }
-    .bigBar {
-        top: 310px;
-    }
-    .profileSection {
-        flex-direction: column;
-        align-items: center;
-        background-position: center;
-    }
-    .textSection {
-        margin-top: 0;
-    }
-    .firstText {
-        left: -10px;
-        bottom: -2px;
-        position: relative;
-        width: 50px;
-    }
-    button {
-        top: 100px;
-    }
-    .containerPadding {
-        margin-bottom: 100px;
-    }
+@media (max-width: 1520px) {
+  .imgContainer {
+    width: 500px;
+    margin-top: 50px;
+  }
+  .bigBar {
+    top: 310px;
+  }
+  .profileSection {
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+  }
+  .textSection {
+    margin-top: 0;
+  }
+  .firstText {
+    left: -10px;
+    bottom: -2px;
+    position: relative;
+    width: 50px;
+  }
+  button {
+    top: 100px;
+  }
+  .containerPadding {
+    margin-bottom: 100px;
+  }
 }
 
-@media (max-width:1315px) {
-    .bigBar {
-        top: 295px;
-    }
+@media (max-width: 1315px) {
+  .bigBar {
+    top: 295px;
+  }
 }
 
-@media (max-width:868px) {
-    .containerPadding {
-        margin-bottom: 200px;
+@media (max-width: 868px) {
+  .containerPadding {
+    margin-bottom: 200px;
+  }
+  .imgContainer {
+    width: 360px;
+    margin-top: 90px;
+  }
+  .bigBar {
+    img {
+      height: 550px;
     }
-    .imgContainer {
-        width: 360px;
-        margin-top: 90px;
+  }
+  .firstText {
+    font-size: 46px;
+  }
+  .secondText {
+    font-size: 50px;
+  }
+  .thirdText {
+    font-size: 42px;
+  }
+  .line {
+    width: 100px;
+  }
+  .contactPossibilities {
+    a {
+      font-size: 20px;
     }
-    .bigBar {
-        img {
-            height: 550px;
-        }
-    }
-    .firstText {
-        font-size: 46px;
-    }
-    .secondText {
-        font-size: 50px;
-    }
-    .thirdText {
-        font-size: 42px;
-    }
-    .line {
-        width: 100px;
-    }
-    .contactPossibilities {
-        a {
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 @media (max-width: 725px) {
-    .thirdText{
-        font-size: 43px;
-    }
-    button {
-        top: 180px;
-    }
-    .profileSection {
-        background-position-y: 100px;
-    }
+  .thirdText {
+    font-size: 43px;
+  }
+  button {
+    top: 180px;
+  }
+  .profileSection {
+    background-position-y: 100px;
+  }
 }
 
 @media (max-width: 668px) {
-    .containerPadding {
-        margin-bottom: 130px;
-    }
+  .containerPadding {
+    margin-bottom: 130px;
+  }
 }
 
 @media (max-width: 650px) {
-    .profileSection{
-        background-size: 450px;
-        background-position: center;
-        background-position-y: 100px;
-    }
+  .profileSection {
+    background-size: 450px;
+    background-position: center;
+    background-position-y: 100px;
+  }
 }
 
 @media (max-width: 630px) {
-    .profileSection{
-        background-size: 400px;
-    }
+  .profileSection {
+    background-size: 400px;
+  }
 }
 
 @media (max-width: 585px) {
-    .contactPossibilities {
-        a {
-            display: none;
-        }
+  .contactPossibilities {
+    a {
+      display: none;
     }
+  }
 }
 
 @media (max-width: 515px) {
-    .profileSection{
-        background-size: 400px;
-        background-position-y: 100px;
-        background-size: 350px;
-    }
+  .profileSection {
+    background-size: 400px;
+    background-position-y: 100px;
+    background-size: 350px;
+  }
 }
 
 @media (max-width: 450px) {
-    .profileSection{
-        background-position-y: 150px;
-    }
+  .profileSection {
+    background-position-y: 150px;
+  }
 }
 
 @media (max-width: 376px) {
-    .imgContainer {
-        width: 280px;
+  .imgContainer {
+    width: 280px;
+  }
+  .firstText {
+    font-size: 37px;
+  }
+  .secondText {
+    font-size: 40px;
+  }
+  .thirdText {
+    font-size: 32px;
+  }
+  .bigBar {
+    top: 324px;
+    img {
+      height: 100%;
     }
-    .firstText {
-        font-size: 37px;
-    }
-    .secondText {
-        font-size: 40px;
-    }
-    .thirdText {
-        font-size: 32px;
-    }
-    .bigBar {
-        top: 324px;
-        img {
-            height: 100%;
-        }
-    }
-    .containerPadding {
-        margin-bottom: 245px;
-    }
+  }
+  .containerPadding {
+    margin-bottom: 245px;
+  }
 }
 
 @media (max-width: 296px) {
-    .imgContainer {
-        width: 260px;
-    }
+  .imgContainer {
+    width: 260px;
+  }
 }
