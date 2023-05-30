@@ -285,9 +285,12 @@ button {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 377px) {
   .imgContainer {
     width: 280px;
+  }
+  .textSection {
+    margin-top: -10px;
   }
   .firstText {
     font-size: 37px;

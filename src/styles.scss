@@ -60,9 +60,15 @@ h3 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 434px) {
   .containerPadding {
     padding: 35px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .containerPadding {
+    padding: 35px 10px;
   }
 }
 

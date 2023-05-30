@@ -48,16 +48,6 @@ h2 {
 
 .textContainer {
   width: 500px;
-  // &::after {
-  //     content: "";
-  //     display: inline-block;
-  //     margin-top: 50px;
-  //     width: 100px;
-  //     height: 4px;
-  //     position: absolute;
-  //     right: -100px;
-  //     background-color: #1CDAE6;
-  // }
 }
 
 button {
@@ -141,7 +131,7 @@ button {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 740px) {
   h2 {
     font-size: 75px;
   }
@@ -153,36 +143,25 @@ button {
   }
 }
 
-@media (max-width: 545px) {
+@media (max-width: 616px) {
   h2 {
     font-size: 55px;
-    &::after {
-      right: -65px;
-    }
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 434px) {
   h2 {
     &::after {
-      width: 65px;
+      width: 150px;
     }
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   h2 {
     line-height: 100%;
     &::after {
-      right: -30px;
-    }
-  }
-}
-
-@media (max-width: 350px) {
-  h2 {
-    &::after {
-      width: 30px;
+      width: 100px;
     }
   }
 }
