@@ -119,9 +119,13 @@ footer {
 
 @media (max-width: 740px) {
   footer {
-    padding: 80px 100px;
+    padding: 40px 100px;
     flex-direction: column;
     position: unset;
+    height: unset;
+    div {
+      margin-bottom: 10px;
+    }
   }
   .logoContainer {
     position: unset;
@@ -145,7 +149,7 @@ footer {
 
 @media (max-width: 469px) {
   footer {
-    padding: 80px 65px;
+    padding: 40px 65px;
   }
 }
 
@@ -169,7 +173,7 @@ footer {
 
 @media (max-width: 360px) {
   footer {
-    padding: 80px 30px;
+    padding: 40px 30px;
   }
   .logoContainer {
     img {

@@ -150,6 +150,17 @@ button {
 }
 
 ///////////////////////////////////////////////////media querry///////////////////////////////////////////////////////////
+
+@media (min-width: 1300px) {
+  .containerPadding {
+    height: 100vh;
+  }
+  .contacts {
+    position: absolute;
+    bottom: 80px;
+  }
+}
+
 @media (max-width: 1600px) {
   .firstText {
     font-size: 57px;
@@ -187,14 +198,17 @@ button {
   button {
     top: 100px;
   }
-  .containerPadding {
-    margin-bottom: 90px;
-  }
 }
 
 @media (max-width: 1315px) {
   .bigBar {
     top: 295px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .containerPadding {
+    margin-bottom: 80px;
   }
 }
 
@@ -308,7 +322,7 @@ button {
     }
   }
   .containerPadding {
-    margin-bottom: 245px;
+    margin-bottom: 200px;
   }
 }
 
