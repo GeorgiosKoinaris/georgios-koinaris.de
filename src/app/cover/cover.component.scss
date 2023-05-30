@@ -176,7 +176,7 @@ button {
     background-position: center;
   }
   .textSection {
-    margin-top: 0;
+    margin-top: -45px;
   }
   .firstText {
     left: -10px;
@@ -188,7 +188,7 @@ button {
     top: 100px;
   }
   .containerPadding {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 }
 
@@ -242,7 +242,7 @@ button {
   }
 }
 
-@media (max-width: 668px) {
+@media (max-width: 720px) {
   .containerPadding {
     margin-bottom: 130px;
   }
@@ -263,10 +263,11 @@ button {
 }
 
 @media (max-width: 585px) {
-  .contactPossibilities {
-    a {
-      display: none;
-    }
+  .contacts {
+    gap: 30px;
+  }
+  .mailContact {
+    display: none;
   }
 }
 

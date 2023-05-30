@@ -1,143 +1,141 @@
 :host {
-    scroll-margin-top: 100px;
+  scroll-margin-top: 50px;
 }
 
 .aboutMeSection {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .text-container {
-    padding: 10px;
-    width: 550px;
-    h2 {
-        color: white;
-        margin-top: 50px;
-        margin-bottom: 95px;
-        font-size: 90px;
-        font-weight: 700;
-    }
-    div {
-        margin-top: 30px;
-        display: flex;
-    }
-    img {
-        width: 50px;
-        height: 100%;
-        padding-right: 30px;
-    }
+  padding: 10px;
+  width: 550px;
+  h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 95px;
+    font-size: 90px;
+    font-weight: 700;
+  }
+  div {
+    margin-top: 30px;
+    display: flex;
+  }
+  img {
+    width: 50px;
+    height: 100%;
+    padding-right: 30px;
+  }
 }
 
 .imgLineContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        width: 100%;
-        object-fit: cover;
-        margin-top: 50px;
-        border-radius: 100%;
-        border: 4px solid #1CDAE6;
-    }
-    &::after {
-        content: "";
-        display: inline-block;
-        margin-top: 50px;
-        width: 100px;
-        height: 4px;
-        position: absolute;
-        right: -100px;
-        background-color: #1CDAE6;
-    }
+  padding-right: 100px;
+  width: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 100%;
+    border: 4px solid #1cdae6;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-top: 50px;
+    width: 200px;
+    height: 4px;
+    position: absolute;
+    right: -100px;
+    background-color: #1cdae6;
+  }
 }
 
 ///////////////////////////////////////////////////media querry///////////////////////////////////////////////////////////
-@media (max-width: 1320px) {
-    .imgLineContainer {
-        width: 400px;
+@media (max-width: 1400px) {
+  .imgLineContainer {
+    padding-right: unset;
+    &::after {
+      width: 100px;
     }
+  }
+}
+
+@media (max-width: 1320px) {
+  .imgLineContainer {
+    width: 400px;
+  }
 }
 
 @media (max-width: 1210px) {
-    .aboutMeSection {
-        flex-direction: column;
-    }
-    .imgLineContainer {
-        align-self: end;
-    }
-    .imgLineContainer {
-        width: 450px;
-    }
+  .imgLineContainer {
+    width: 320px;
+  }
+  // .aboutMeSection {
+  //   flex-direction: column;
+  // }
+  // .imgLineContainer {
+  //   align-self: end;
+  // }
+  // .imgLineContainer {
+  //   width: 450px;
+  // }
 }
 
-@media (max-width: 860px) {
-    h2 {
-        text-align: center;
-    }
-    .aboutMeSection {
-        align-items: center;
-    }
-    .imgLineContainer {
-        width: 350px;
-    }
+@media (max-width: 1130px) {
+  .imgLineContainer {
+    width: 270px;
+  }
+}
+
+@media (max-width: 1065px) {
+  .containerPadding {
+    justify-content: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .imgLineContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 692px) {
+  h2 {
+    line-height: 100%;
+  }
 }
 
 @media (max-width: 660px) {
-    h2 {
-        font-size: 75px !important;
-    }
-    .text-container {
-        width: 400px;
-    }
+  h2 {
+    font-size: 75px !important;
+  }
+  .text-container {
+    width: 400px;
+  }
 }
 
 @media (max-width: 545px) {
-    h2 {
-        font-size: 55px !important;
-    }
-    .text-container {
-        width: 300px;
-    }
-    .imgLineContainer {
-        &::after {
-            right: -65px;
-            width: 65px;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .imgLineContainer {
-        width: 250px;
-    }
+  h2 {
+    font-size: 55px !important;
+  }
+  .text-container {
+    width: 300px;
+  }
 }
 
 @media (max-width: 400px) {
-    h2 {
-        line-height: 100%;
-    }
-    .text-container {
-        width: 250px;
-    }
-    .imgLineContainer {
-        width: 250px;
-    }
-}
-
-@media (max-width: 375px) {
-    .imgLineContainer {
-        width: auto;
-        &::after {
-            right: -30px;
-            width: 30px;
-        }
-    }
+  .text-container {
+    width: 250px;
+  }
 }
 
 @media (max-width: 296px) {
-    .text-container {
-        width: auto;
-    }
+  .text-container {
+    width: auto;
+  }
 }
