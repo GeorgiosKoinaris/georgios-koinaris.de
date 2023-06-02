@@ -16,14 +16,6 @@
   width: 100%;
 }
 
-// .profileImgBg {
-//     position: absolute;
-//     left: -120px;
-//     top: 225px;
-//     width: 850px;
-//     height: 750px;
-//     z-index: -1;
-// }
 .textSection {
   margin-top: 300px;
   position: relative;
@@ -124,21 +116,6 @@ button {
   width: 200px;
 }
 
-// .scrollDown {
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-//     right: 0px;
-//     top: -135px;
-//     p {
-//         writing-mode: vertical-rl;
-//         font-size: 25px;
-//         text-align: center;
-//     }
-//     img {
-//         width: 25px;
-//     }
-// }
 .bigBar {
   position: absolute;
   top: 450px;
@@ -261,6 +238,11 @@ button {
     margin-bottom: 130px;
   }
 }
+@media (max-width: 658px) {
+  .mailContact {
+    display: none;
+  }
+}
 
 @media (max-width: 650px) {
   .profileSection {
@@ -279,9 +261,6 @@ button {
 @media (max-width: 585px) {
   .contacts {
     gap: 30px;
-  }
-  .mailContact {
-    display: none;
   }
 }
 
