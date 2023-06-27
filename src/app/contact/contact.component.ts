@@ -33,13 +33,10 @@ export class ContactComponent {
     fd.append('message', messageField.value);
     fd.append('email', mailField.value);
     //senden
-    await fetch(
-      'https://georgios-koinaris.developerakademie.net/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd,
-      }
-    );
+    await fetch('https://georgios-koinaris.com/send_mail/send_mail.php', {
+      method: 'POST',
+      body: fd,
+    });
     //Text anzeigen: Nachricht gesendet
     this.showMessage = true;
     this.enableFields();
