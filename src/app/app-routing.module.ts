@@ -5,11 +5,12 @@ import { CoverComponent } from './cover/cover.component';
 
 const routes: Routes = [
   { path: '', component: CoverComponent },
+  { path: 'home', component: CoverComponent },
   { path: 'imprint', component: ImprintComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
