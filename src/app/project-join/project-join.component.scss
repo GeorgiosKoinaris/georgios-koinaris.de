@@ -1,153 +1,155 @@
 .projectContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .imageContainer {
-    display: flex;
-    justify-content: end;
-    width: 550px;
-    img {
-        width: 630px;
-    }
+  display: flex;
+  justify-content: start;
+  width: 550px;
+  img {
+    width: 630px;
+  }
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    h3 {
-        font-size: 35px;
-        font-weight: 600;
-        color: #4B47FF;
-    }
-    span {
-        margin-bottom: 25px;
-    }
-    button {
-        margin-right: 70px;
-    }
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  text-align: end;
+  h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #4b47ff;
+  }
+  span {
+    margin-bottom: 25px;
+  }
+  button {
+    margin-left: 70px;
+  }
 }
 
 .secondTitle {
-    font-size: 22px;
-    font-weight: 400;
-    color: #1CDAE6;
+  font-size: 22px;
+  font-weight: 400;
+  color: #1cdae6;
 }
 
 .button1 {
-    font-size: 22px;
-    color: white;
-    width: 150px;
-    height: 58px;
-    background: #4B47FF;
-    border-radius: 10px;
-    transition: ease-in-out 100ms;
-    &:hover {
-        cursor: pointer;
-        background: #00BEE8;
-    }
+  font-size: 22px;
+  color: white;
+  width: 150px;
+  height: 58px;
+  background: #4b47ff;
+  border-radius: 10px;
+  transition: ease-in-out 100ms;
+  &:hover {
+    cursor: pointer;
+    background: #00bee8;
+  }
 }
 
 .button2 {
-    font-size: 22px;
-    color: white;
-    width: 150px;
-    height: 58px;
-    background: #141D2F;
-    border: 1px solid #00BEE8;
-    border-radius: 10px;
-    transition: ease-in-out 100ms;
-    &:hover {
-        cursor: pointer;
-        background: #00BEE8;
-    }
+  font-size: 22px;
+  color: white;
+  width: 150px;
+  height: 58px;
+  background: #141d2f;
+  border: 1px solid #00bee8;
+  border-radius: 10px;
+  transition: ease-in-out 100ms;
+  &:hover {
+    cursor: pointer;
+    background: #00bee8;
+  }
 }
 
 ///////////////////////////////////////////////////media querry///////////////////////////////////////////////////////////
 @media (max-width: 1307px) {
-    .textContainer {
-        button {
-            margin-right: 50px;
-        }
+  .textContainer {
+    button {
+      margin-left: 50px;
     }
+  }
 }
 
 @media (max-width: 1266px) {
-    .textContainer {
-        button {
-            margin-right: 30px;
-        }
+  .textContainer {
+    button {
+      margin-left: 30px;
     }
-    .button1 {
-        height: 55px;
-        width: 130px;
-    }
-    .button2 {
-        height: 55px;
-        width: 130px;
-    }
+  }
+  .button1 {
+    height: 55px;
+    width: 130px;
+  }
+  .button2 {
+    height: 55px;
+    width: 130px;
+  }
 }
 
 @media (max-width: 1186px) {
-    .imageContainer {
-        img {
-            width: 580px;
-        }
+  .imageContainer {
+    img {
+      width: 580px;
     }
-    .textContainer {
-        button {
-            margin-right: 20px;
-        }
+  }
+  .textContainer {
+    button {
+      margin-right: 20px;
     }
-    .projectContainer {
-        gap: 0px;
-    }
+  }
+  .projectContainer {
+    gap: 0px;
+  }
 }
 
-@media (max-width:1135px) {
-    .projectContainer {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1135px) {
+  .projectContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageContainer {
+    width: 600px;
+    img {
+      width: 100%;
     }
-    .imageContainer {
-        width: 600px;
-        img {
-            width: 100%;
-        }
+  }
+  .textContainer {
+    align-items: center;
+    order: 1;
+    text-align: center;
+    span {
+      text-align: center;
     }
-    .textContainer {
-        align-items: center;
-        text-align: center;
-        span {
-            text-align: center;
-        }
-        button {
-            margin-right: 0px;
-            margin: 5px;
-        }
+    button {
+      margin-left: 0px;
+      margin: 5px;
     }
+  }
 }
 
-@media (max-width:660px) {
-    .imageContainer {
-        width: 500px;
-    }
-    .textContainer {
-        width: auto;
-    }
+@media (max-width: 660px) {
+  .imageContainer {
+    width: 500px;
+  }
+  .textContainer {
+    width: auto;
+  }
 }
 
-@media (max-width:516px) {
-    .imageContainer {
-        width: 400px;
-    }
+@media (max-width: 516px) {
+  .imageContainer {
+    width: 400px;
+  }
 }
 
-@media (max-width:416px) {
-    .imageContainer {
-        width: auto;
-    }
+@media (max-width: 416px) {
+  .imageContainer {
+    width: auto;
+  }
 }
